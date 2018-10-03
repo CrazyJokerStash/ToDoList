@@ -1,6 +1,6 @@
 # ToDoList
 
-Voici les différents routes :
+Voici les différentes routes :
 
 --> /localhost:3000/todos pour avoir toutes les listes (get).
 
