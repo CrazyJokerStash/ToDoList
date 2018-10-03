@@ -10,4 +10,4 @@ Voici les différentes routes :
 
 --> /localhost:3000/todos/done/x pour mettre à jour la tâche rowid x en done (done peut être changé en Undone ou autre) (update).
 
---> /localhost:3000/todos/x pour delete la liste avec pour rowid x.
+--> /localhost:3000/todos/x pour delete la liste avec pour rowid x (delete).
