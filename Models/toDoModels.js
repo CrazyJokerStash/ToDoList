@@ -4,8 +4,8 @@ module.exports = {
 	getAll() {
 		return db.all("SELECT * FROM todos")
 	},
-	get(id) {
-		return db.get("SELECT * FROM todos WHERE ROWID = ?", id)
+	get(uid) {
+		return db.get("SELECT * FROM todos WHERE userId = ?", uid)
 	},
 	create(userId, message, status, createdAt, updatedAt, completedAt) {
 		return db.run("INSERT INTO todos (userId, message, status, createdAt, updatedAt, completedAt) VALUES (?, ?, ?, ?, ?, ?)", userId, message, status, createdAt, updatedAt, completedAt)

@@ -6,7 +6,8 @@ api = express()
 
 db.open('ToDoList.db').then(()=> {
   Promise.all([
-    db.run("CREATE TABLE IF NOT EXISTS todos (userId, message, status, createdAt, updatedAt, completedAt)")
+    db.run("CREATE TABLE IF NOT EXISTS todos (userId, message, status, createdAt, updatedAt, completedAt)"),
+    db.run("CREATE TABLE IF NOT EXISTS users (userName)")
   ]).then(() => {
     console.log('Database Ready')
   }).catch((err) => {
